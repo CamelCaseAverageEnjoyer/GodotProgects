@@ -1,0 +1,736 @@
+[gd_scene load_steps=272 format=2]
+
+[ext_resource path="res://npc/split_imgs/pensil/pensil2.png" type="Texture" id=1]
+[ext_resource path="res://World/Player.gd" type="Script" id=2]
+[ext_resource path="res://npc/split_imgs/pensil/pensil7.png" type="Texture" id=3]
+[ext_resource path="res://npc/split_imgs/pensil/pensil3.png" type="Texture" id=4]
+[ext_resource path="res://npc/split_imgs/pensil/pensil8.png" type="Texture" id=5]
+[ext_resource path="res://env/floor/dirt.webp" type="Texture" id=6]
+[ext_resource path="res://npc/split_imgs/pensil/pensil6.png" type="Texture" id=7]
+[ext_resource path="res://npc/split_imgs/pensil/pensil5.png" type="Texture" id=8]
+[ext_resource path="res://npc/split_imgs/pensil/pensil4.png" type="Texture" id=9]
+[ext_resource path="res://env/floor/stone.png" type="Texture" id=10]
+[ext_resource path="res://World/World.gd" type="Script" id=11]
+[ext_resource path="res://npc/split_imgs/pensil/pensil1.png" type="Texture" id=12]
+[ext_resource path="res://env/floor/sand.jpg" type="Texture" id=13]
+[ext_resource path="res://env/environment.png" type="Texture" id=14]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man62.png" type="Texture" id=15]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man15.png" type="Texture" id=16]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man14.png" type="Texture" id=17]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man38.png" type="Texture" id=18]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man10.png" type="Texture" id=19]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man13.png" type="Texture" id=20]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man29.png" type="Texture" id=21]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man37.png" type="Texture" id=22]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man55.png" type="Texture" id=23]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man46.png" type="Texture" id=24]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man9.png" type="Texture" id=25]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man8.png" type="Texture" id=26]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man28.png" type="Texture" id=27]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man30.png" type="Texture" id=28]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man61.png" type="Texture" id=29]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man33.png" type="Texture" id=30]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man24.png" type="Texture" id=31]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man19.png" type="Texture" id=32]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man50.png" type="Texture" id=33]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man6.png" type="Texture" id=34]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man5.png" type="Texture" id=35]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man63.png" type="Texture" id=36]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man57.png" type="Texture" id=37]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man36.png" type="Texture" id=38]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man18.png" type="Texture" id=39]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man11.png" type="Texture" id=40]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man32.png" type="Texture" id=41]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man3.png" type="Texture" id=42]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man40.png" type="Texture" id=43]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man56.png" type="Texture" id=44]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man42.png" type="Texture" id=45]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man27.png" type="Texture" id=46]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man26.png" type="Texture" id=47]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man7.png" type="Texture" id=48]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man64.png" type="Texture" id=49]
+[ext_resource path="res://npc/split_imgs/CrazyOne.gd" type="Script" id=50]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man22.png" type="Texture" id=51]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man51.png" type="Texture" id=52]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man53.png" type="Texture" id=53]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man2.png" type="Texture" id=54]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man4.png" type="Texture" id=55]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man65.png" type="Texture" id=56]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man20.png" type="Texture" id=57]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man23.png" type="Texture" id=58]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man45.png" type="Texture" id=59]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man54.png" type="Texture" id=60]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man41.png" type="Texture" id=61]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man49.png" type="Texture" id=62]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man31.png" type="Texture" id=63]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man52.png" type="Texture" id=64]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man34.png" type="Texture" id=65]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man59.png" type="Texture" id=66]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man44.png" type="Texture" id=67]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man58.png" type="Texture" id=68]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man48.png" type="Texture" id=69]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man60.png" type="Texture" id=70]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man25.png" type="Texture" id=71]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man1.png" type="Texture" id=72]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man66.png" type="Texture" id=73]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man12.png" type="Texture" id=74]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man21.png" type="Texture" id=75]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man39.png" type="Texture" id=76]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man47.png" type="Texture" id=77]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man43.png" type="Texture" id=78]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man35.png" type="Texture" id=79]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man67.png" type="Texture" id=80]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man16.png" type="Texture" id=81]
+[ext_resource path="res://npc/split_imgs/crazy_man/crazy_man17.png" type="Texture" id=82]
+[ext_resource path="res://env/button_normal.png" type="Texture" id=83]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior99.png" type="Texture" id=84]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior18.png" type="Texture" id=85]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior52.png" type="Texture" id=86]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior10.png" type="Texture" id=87]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior55.png" type="Texture" id=88]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior56.png" type="Texture" id=89]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior20.png" type="Texture" id=90]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior12.png" type="Texture" id=91]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior21.png" type="Texture" id=92]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior54.png" type="Texture" id=93]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior9.png" type="Texture" id=94]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior87.png" type="Texture" id=95]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior86.png" type="Texture" id=96]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior57.png" type="Texture" id=97]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior33.png" type="Texture" id=98]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior77.png" type="Texture" id=99]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior96.png" type="Texture" id=100]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior98.png" type="Texture" id=101]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior97.png" type="Texture" id=102]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior32.png" type="Texture" id=103]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior75.png" type="Texture" id=104]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior76.png" type="Texture" id=105]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior81.png" type="Texture" id=106]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior82.png" type="Texture" id=107]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior29.png" type="Texture" id=108]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior58.png" type="Texture" id=109]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior79.png" type="Texture" id=110]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior101.png" type="Texture" id=111]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior17.png" type="Texture" id=112]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior34.png" type="Texture" id=113]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior100.png" type="Texture" id=114]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior60.png" type="Texture" id=115]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior4.png" type="Texture" id=116]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior72.png" type="Texture" id=117]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior64.png" type="Texture" id=118]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior3.png" type="Texture" id=119]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior15.png" type="Texture" id=120]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior7.png" type="Texture" id=121]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior6.png" type="Texture" id=122]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior62.png" type="Texture" id=123]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior16.png" type="Texture" id=124]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior31.png" type="Texture" id=125]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior68.png" type="Texture" id=126]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior1.png" type="Texture" id=127]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior93.png" type="Texture" id=128]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior94.png" type="Texture" id=129]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior95.png" type="Texture" id=130]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior8.png" type="Texture" id=131]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior13.png" type="Texture" id=132]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior92.png" type="Texture" id=133]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior80.png" type="Texture" id=134]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior91.png" type="Texture" id=135]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior90.png" type="Texture" id=136]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior59.png" type="Texture" id=137]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior65.png" type="Texture" id=138]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior25.png" type="Texture" id=139]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior61.png" type="Texture" id=140]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior66.png" type="Texture" id=141]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior11.png" type="Texture" id=142]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior28.png" type="Texture" id=143]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior88.png" type="Texture" id=144]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior89.png" type="Texture" id=145]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior27.png" type="Texture" id=146]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior24.png" type="Texture" id=147]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior14.png" type="Texture" id=148]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior74.png" type="Texture" id=149]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior85.png" type="Texture" id=150]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior84.png" type="Texture" id=151]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior78.png" type="Texture" id=152]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior83.png" type="Texture" id=153]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior53.png" type="Texture" id=154]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior26.png" type="Texture" id=155]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior5.png" type="Texture" id=156]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior70.png" type="Texture" id=157]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior63.png" type="Texture" id=158]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior51.png" type="Texture" id=159]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior22.png" type="Texture" id=160]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior73.png" type="Texture" id=161]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior69.png" type="Texture" id=162]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior71.png" type="Texture" id=163]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior67.png" type="Texture" id=164]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior30.png" type="Texture" id=165]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior19.png" type="Texture" id=166]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior23.png" type="Texture" id=167]
+[ext_resource path="res://npc/split_imgs/full_warrior/full_warrior2.png" type="Texture" id=168]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr39.png" type="Texture" id=169]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr27.png" type="Texture" id=170]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr63.png" type="Texture" id=171]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr56.png" type="Texture" id=172]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr69.png" type="Texture" id=173]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr48.png" type="Texture" id=174]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr64.png" type="Texture" id=175]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr66.png" type="Texture" id=176]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr53.png" type="Texture" id=177]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr49.png" type="Texture" id=178]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr19.png" type="Texture" id=179]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr46.png" type="Texture" id=180]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr31.png" type="Texture" id=181]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr87.png" type="Texture" id=182]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr88.png" type="Texture" id=183]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr89.png" type="Texture" id=184]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr22.png" type="Texture" id=185]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr62.png" type="Texture" id=186]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr17.png" type="Texture" id=187]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr83.png" type="Texture" id=188]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr23.png" type="Texture" id=189]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr24.png" type="Texture" id=190]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr67.png" type="Texture" id=191]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr20.png" type="Texture" id=192]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr21.png" type="Texture" id=193]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr59.png" type="Texture" id=194]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr38.png" type="Texture" id=195]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr41.png" type="Texture" id=196]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr35.png" type="Texture" id=197]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr30.png" type="Texture" id=198]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr43.png" type="Texture" id=199]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr74.png" type="Texture" id=200]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr86.png" type="Texture" id=201]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr85.png" type="Texture" id=202]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr81.png" type="Texture" id=203]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr18.png" type="Texture" id=204]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr58.png" type="Texture" id=205]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr47.png" type="Texture" id=206]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr61.png" type="Texture" id=207]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr79.png" type="Texture" id=208]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr78.png" type="Texture" id=209]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr71.png" type="Texture" id=210]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr16.png" type="Texture" id=211]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr65.png" type="Texture" id=212]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr14.png" type="Texture" id=213]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr70.png" type="Texture" id=214]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr42.png" type="Texture" id=215]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr75.png" type="Texture" id=216]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr82.png" type="Texture" id=217]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr57.png" type="Texture" id=218]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr51.png" type="Texture" id=219]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr44.png" type="Texture" id=220]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr90.png" type="Texture" id=221]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr73.png" type="Texture" id=222]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr72.png" type="Texture" id=223]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr33.png" type="Texture" id=224]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr25.png" type="Texture" id=225]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr52.png" type="Texture" id=226]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr26.png" type="Texture" id=227]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr40.png" type="Texture" id=228]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr50.png" type="Texture" id=229]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr68.png" type="Texture" id=230]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr60.png" type="Texture" id=231]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr80.png" type="Texture" id=232]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr55.png" type="Texture" id=233]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr45.png" type="Texture" id=234]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr34.png" type="Texture" id=235]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr54.png" type="Texture" id=236]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr84.png" type="Texture" id=237]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr32.png" type="Texture" id=238]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr36.png" type="Texture" id=239]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr77.png" type="Texture" id=240]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr76.png" type="Texture" id=241]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr28.png" type="Texture" id=242]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr29.png" type="Texture" id=243]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr37.png" type="Texture" id=244]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr15.png" type="Texture" id=245]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr4.png" type="Texture" id=246]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr7.png" type="Texture" id=247]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr1.png" type="Texture" id=248]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr8.png" type="Texture" id=249]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr5.png" type="Texture" id=250]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr9.png" type="Texture" id=251]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr6.png" type="Texture" id=252]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr2.png" type="Texture" id=253]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr3.png" type="Texture" id=254]
+[ext_resource path="res://npc/split_imgs/full_wizard/full_wizardr10.png" type="Texture" id=255]
+[ext_resource path="res://World/HitBox.gd" type="Script" id=256]
+
+[sub_resource type="TileSet" id=3]
+0/name = "dirt.webp 0"
+0/texture = ExtResource( 6 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "stone.png 1"
+1/texture = ExtResource( 10 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 32, 32 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "sand.jpg 2"
+2/texture = ExtResource( 13 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 32, 32 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 35.2239, 41.6573, 67.3741, 47.6855, 45.6057, 58.7371, 30.5353, 58.7371, 8.43207, 50.6996 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 17.2304, 27.2379, 58.7577, 27.2379, 72.8234, 39.6292, 55.0739, 52.6902, 27.9471, 53.6949, 3.16464, 41.3036 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 38.5653, 40.3766, 76.4088, 61.4752, 38.2304, 78.555, 0, 58.7961, 0, 58.4612 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 40.7563, 40.7115, 78.5998, 60.1356, 40.0865, 78.555, 0, 59.131 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 39.4332, 40.3719, 77.9464, 59.7961, 39.0983, 78.5504, 0.250122, 59.4612 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 13.4278, 49.7401, 67.3464, 50.7448, 74.0443, 59.1173, 67.6813, 69.1642, 58.3041, 71.5085, 40.8894, 73.8528, 21.4653, 73.183, 5.72513, 63.471 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 12.6187, 46.0233, 67.5419, 48.0327, 79, 55.0655, 63.858, 71.4755, 40.75, 75.1594, 17.3072, 72.8151, 4.91595, 66.4521 )
+
+[sub_resource type="TileSet" id=7]
+0/name = "environment.png 0"
+0/texture = ExtResource( 14 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 166, 426, 78, 39 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "environment.png 1"
+1/texture = ExtResource( 14 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 476, 426, 77, 40 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "environment.png 2"
+2/texture = ExtResource( 14 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 683, 426, 77, 40 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "environment.png 3"
+3/texture = ExtResource( 14 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 889, 426, 77, 39 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "environment.png 4"
+4/texture = ExtResource( 14 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 268, 387, 80, 79 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "environment.png 5"
+5/texture = ExtResource( 14 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 372, 387, 79, 79 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 4 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "environment.png 6"
+6/texture = ExtResource( 14 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 268, 387, 80, 79 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 5 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "environment.png 7"
+7/texture = ExtResource( 14 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 578, 386, 79, 79 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 6 )
+7/shape_one_way = false
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+7/z_index = 0
+8/name = "environment.png 8"
+8/texture = ExtResource( 14 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 59, 167, 79, 77 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape = SubResource( 12 )
+8/shape_one_way = false
+8/shape_one_way_margin = 1.0
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+8/z_index = 0
+9/name = "environment.png 9"
+9/texture = ExtResource( 14 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 574, 267, 79, 76 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape = SubResource( 13 )
+9/shape_one_way = false
+9/shape_one_way_margin = 1.0
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+9/z_index = 0
+10/name = "environment.png 10"
+10/texture = ExtResource( 14 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 877, 86, 79, 60 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape = SubResource( 10 )
+10/shape_one_way = false
+10/shape_one_way_margin = 1.0
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+10/z_index = 0
+11/name = "environment.png 11"
+11/texture = ExtResource( 14 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 467, 82, 81, 62 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape = SubResource( 11 )
+11/shape_one_way = false
+11/shape_one_way_margin = 1.0
+11/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+11/z_index = 0
+
+[sub_resource type="TileSet" id=8]
+0/name = "environment.png 0"
+0/texture = ExtResource( 14 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 166, 426, 78, 39 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "environment.png 1"
+1/texture = ExtResource( 14 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 474, 610, 78, 40 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "environment.png 2"
+2/texture = ExtResource( 14 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 267, 521, 78, 40 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "environment.png 3"
+3/texture = ExtResource( 14 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 476, 425, 77, 40 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+
+[sub_resource type="CircleShape2D" id=15]
+radius = 25.1247
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 3 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "pensil_run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "pensil_wait",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 112 ), ExtResource( 85 ), ExtResource( 166 ), ExtResource( 90 ), ExtResource( 92 ), ExtResource( 160 ), ExtResource( 167 ), ExtResource( 147 ), ExtResource( 139 ), ExtResource( 155 ), ExtResource( 146 ), ExtResource( 143 ), ExtResource( 108 ), ExtResource( 165 ), ExtResource( 125 ), ExtResource( 103 ), ExtResource( 98 ), ExtResource( 113 ) ],
+"loop": true,
+"name": "warrior_attack_1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 159 ), ExtResource( 86 ), ExtResource( 154 ), ExtResource( 93 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 97 ), ExtResource( 109 ), ExtResource( 137 ), ExtResource( 115 ), ExtResource( 140 ), ExtResource( 123 ), ExtResource( 158 ), ExtResource( 118 ), ExtResource( 138 ), ExtResource( 141 ), ExtResource( 164 ), ExtResource( 126 ), ExtResource( 162 ), ExtResource( 157 ), ExtResource( 163 ), ExtResource( 117 ), ExtResource( 161 ), ExtResource( 149 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 99 ), ExtResource( 152 ), ExtResource( 110 ), ExtResource( 134 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 153 ), ExtResource( 151 ), ExtResource( 150 ), ExtResource( 96 ), ExtResource( 95 ), ExtResource( 144 ), ExtResource( 145 ), ExtResource( 136 ), ExtResource( 135 ), ExtResource( 133 ), ExtResource( 128 ), ExtResource( 129 ), ExtResource( 130 ), ExtResource( 100 ), ExtResource( 102 ), ExtResource( 101 ), ExtResource( 84 ), ExtResource( 114 ), ExtResource( 111 ) ],
+"loop": true,
+"name": "warrior_attack_2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 94 ), ExtResource( 87 ), ExtResource( 142 ), ExtResource( 91 ), ExtResource( 132 ), ExtResource( 148 ), ExtResource( 120 ), ExtResource( 124 ) ],
+"loop": true,
+"name": "warrior_run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 127 ), ExtResource( 168 ), ExtResource( 119 ), ExtResource( 116 ), ExtResource( 156 ), ExtResource( 122 ), ExtResource( 121 ), ExtResource( 131 ) ],
+"loop": true,
+"name": "warrior_wait",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 185 ), ExtResource( 189 ), ExtResource( 190 ), ExtResource( 225 ), ExtResource( 227 ), ExtResource( 170 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 198 ), ExtResource( 181 ), ExtResource( 238 ), ExtResource( 224 ), ExtResource( 235 ), ExtResource( 197 ), ExtResource( 239 ), ExtResource( 244 ), ExtResource( 195 ), ExtResource( 169 ), ExtResource( 228 ), ExtResource( 196 ), ExtResource( 215 ), ExtResource( 199 ), ExtResource( 220 ), ExtResource( 234 ), ExtResource( 180 ), ExtResource( 206 ), ExtResource( 174 ), ExtResource( 178 ), ExtResource( 229 ), ExtResource( 219 ), ExtResource( 226 ), ExtResource( 177 ), ExtResource( 236 ), ExtResource( 233 ), ExtResource( 172 ), ExtResource( 218 ), ExtResource( 205 ), ExtResource( 194 ), ExtResource( 231 ), ExtResource( 207 ), ExtResource( 186 ), ExtResource( 171 ), ExtResource( 175 ), ExtResource( 212 ), ExtResource( 176 ), ExtResource( 191 ), ExtResource( 230 ), ExtResource( 173 ), ExtResource( 214 ), ExtResource( 210 ), ExtResource( 223 ), ExtResource( 222 ), ExtResource( 200 ), ExtResource( 216 ), ExtResource( 241 ), ExtResource( 240 ), ExtResource( 209 ), ExtResource( 208 ), ExtResource( 232 ), ExtResource( 203 ), ExtResource( 217 ), ExtResource( 188 ), ExtResource( 237 ), ExtResource( 202 ), ExtResource( 201 ), ExtResource( 182 ), ExtResource( 183 ), ExtResource( 184 ), ExtResource( 221 ) ],
+"loop": true,
+"name": "wizard_attack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 213 ), ExtResource( 245 ), ExtResource( 211 ), ExtResource( 187 ), ExtResource( 204 ), ExtResource( 179 ), ExtResource( 192 ), ExtResource( 193 ) ],
+"loop": true,
+"name": "wizard_run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 248 ), ExtResource( 253 ), ExtResource( 254 ), ExtResource( 246 ), ExtResource( 250 ), ExtResource( 252 ), ExtResource( 247 ), ExtResource( 249 ), ExtResource( 251 ), ExtResource( 255 ) ],
+"loop": true,
+"name": "wizard_wait",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=16]
+radius = 71.0
+height = 70.0
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ ExtResource( 72 ), ExtResource( 54 ), ExtResource( 42 ), ExtResource( 55 ), ExtResource( 35 ), ExtResource( 34 ), ExtResource( 48 ), ExtResource( 26 ), ExtResource( 25 ), ExtResource( 19 ), ExtResource( 40 ), ExtResource( 74 ), ExtResource( 20 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 39 ), ExtResource( 32 ), ExtResource( 57 ), ExtResource( 75 ), ExtResource( 51 ), ExtResource( 58 ), ExtResource( 31 ), ExtResource( 71 ), ExtResource( 47 ), ExtResource( 46 ), ExtResource( 27 ), ExtResource( 21 ), ExtResource( 28 ), ExtResource( 63 ), ExtResource( 41 ), ExtResource( 30 ), ExtResource( 65 ), ExtResource( 79 ), ExtResource( 38 ), ExtResource( 22 ), ExtResource( 18 ), ExtResource( 76 ), ExtResource( 43 ), ExtResource( 61 ), ExtResource( 45 ), ExtResource( 78 ), ExtResource( 67 ), ExtResource( 59 ), ExtResource( 24 ), ExtResource( 77 ), ExtResource( 69 ), ExtResource( 62 ), ExtResource( 33 ), ExtResource( 52 ), ExtResource( 64 ), ExtResource( 53 ), ExtResource( 60 ), ExtResource( 23 ), ExtResource( 44 ), ExtResource( 37 ), ExtResource( 68 ), ExtResource( 66 ), ExtResource( 70 ), ExtResource( 29 ), ExtResource( 15 ), ExtResource( 36 ), ExtResource( 49 ), ExtResource( 56 ), ExtResource( 73 ), ExtResource( 80 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=14]
+radius = 18.0
+
+[node name="World" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="Ground" type="TileMap" parent="."]
+tile_set = SubResource( 3 )
+cell_size = Vector2( 32, 32 )
+centered_textures = true
+format = 1
+
+[node name="Ground_top" type="TileMap" parent="."]
+z_index = 10
+mode = 2
+tile_set = SubResource( 7 )
+cell_size = Vector2( 40, 20 )
+cell_custom_transform = Transform2D( 40, 0, 0, 20, 0, 0 )
+format = 1
+tile_data = PoolIntArray( -720890, 11, 0 )
+
+[node name="Ground_bot" type="TileMap" parent="."]
+mode = 2
+tile_set = SubResource( 8 )
+cell_size = Vector2( 40, 20 )
+cell_custom_transform = Transform2D( 40, 0, 0, 20, 0, 0 )
+format = 1
+
+[node name="Player" type="KinematicBody2D" parent="."]
+z_index = 5
+script = ExtResource( 2 )
+motion = Vector2( 1, 0 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2( 6, 42.5 )
+shape = SubResource( 15 )
+
+[node name="Going" type="AnimatedSprite" parent="Player"]
+frames = SubResource( 2 )
+animation = "wizard_attack"
+
+[node name="HitBox" type="Area2D" parent="Player"]
+gravity = 97.935
+script = ExtResource( 256 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/HitBox"]
+position = Vector2( 104, 36 )
+shape = SubResource( 16 )
+disabled = true
+
+[node name="CrazyOne" type="KinematicBody2D" parent="."]
+z_index = 5
+script = ExtResource( 50 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="CrazyOne"]
+position = Vector2( 223, -271 )
+scale = Vector2( 0.561667, 0.611667 )
+frames = SubResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CrazyOne"]
+position = Vector2( 176, -172 )
+shape = SubResource( 14 )
+
+[node name="MenuButton" type="MenuButton" parent="."]
+margin_left = -363.0
+margin_top = -90.0
+margin_right = -51.0
+margin_bottom = 66.0
+icon = ExtResource( 83 )
