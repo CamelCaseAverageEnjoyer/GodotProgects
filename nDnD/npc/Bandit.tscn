@@ -1,0 +1,66 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://npc/split_imgs/wait_bandit/wait_bandit5.png" type="Texture" id=1]
+[ext_resource path="res://npc/split_imgs/wait_bandit/wait_bandit6.png" type="Texture" id=2]
+[ext_resource path="res://npc/split_imgs/wait_bandit/wait_bandit1.png" type="Texture" id=3]
+[ext_resource path="res://npc/split_imgs/wait_bandit/wait_bandit3.png" type="Texture" id=4]
+[ext_resource path="res://npc/split_imgs/wait_bandit/wait_bandit4.png" type="Texture" id=5]
+[ext_resource path="res://npc/split_imgs/wait_bandit/wait_bandit2.png" type="Texture" id=6]
+[ext_resource path="res://npc/scripts/Bandit.gd" type="Script" id=7]
+[ext_resource path="res://npc/scripts/HurtBox.gd" type="Script" id=8]
+[ext_resource path="res://npc/scripts/BanditNode.gd" type="Script" id=9]
+[ext_resource path="res://npc/split_imgs/wait_bandit/hust_bandit6.png" type="Texture" id=10]
+[ext_resource path="res://npc/split_imgs/wait_bandit/hust_bandit4.png" type="Texture" id=11]
+[ext_resource path="res://npc/split_imgs/wait_bandit/hust_bandit3.png" type="Texture" id=12]
+[ext_resource path="res://npc/split_imgs/wait_bandit/hust_bandit5.png" type="Texture" id=13]
+[ext_resource path="res://npc/split_imgs/wait_bandit/hust_bandit2.png" type="Texture" id=14]
+[ext_resource path="res://npc/split_imgs/wait_bandit/hust_bandit1.png" type="Texture" id=15]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 14 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "hurt",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 32.0624
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 100.08
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 100.404
+
+[node name="Bandit" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="Bandit" type="KinematicBody2D" parent="."]
+script = ExtResource( 7 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Bandit"]
+frames = SubResource( 1 )
+animation = "hurt"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bandit"]
+position = Vector2( -2, 40 )
+shape = SubResource( 2 )
+
+[node name="HurtBox" type="Area2D" parent="."]
+script = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+modulate = Color( 0.956863, 0.278431, 0.278431, 1 )
+shape = SubResource( 3 )
+
+[node name="MyHurtBox" type="Area2D" parent="."]
+script = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MyHurtBox"]
+shape = SubResource( 4 )
